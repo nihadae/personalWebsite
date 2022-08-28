@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a0e85a8b00.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Alakbarzade</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="spinner-container">
+                <div class="circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="d-flex align-items-center fixed-top py-3">
+        <div class="container">
+            <div class="row">
+                <nav class="col-lg-12 d-flex">
+                    <div class="logo col-lg-2">
+                        <a href="index.html">
+                            <h2>Nihad <span>.</span></h2>
+                        </a>
+                    </div>
+                    <span class="menuBtn col-2" onclick="openNav()">&#9776;</span>
+                    <ul class="nav col-lg-10 d-flex justify-content-center align-items-center">
+                        <a href="#welcome">
+                            <li class="px-4 active">Home</li>
+                        </a>
+                        <a href="#about">
+                            <li class="px-4">About</li>
+                        </a>
+                        <a href="#portfolio">
+                            <li class="px-4">Portfolio</li>
+                        </a>
+                        <a href="#contact">
+                            <li class="px-4">Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="sideNav" id="sideNav">
+                    <ul id="side">
+                        <a href="#">
+                            <li class="closeBtn" onclick="closeNav()">Close &#10006;</li>
+                        </a>
+                        <a href="#welcome">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About</li>
+                        </a>
+                        <a href="#portfolio">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="welcome d-flex align-items-center" id="welcome">
+            <canvas class="background"></canvas>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="allInfo d-flex align-items-center flex-column py-5" data-aos="zoom-out"
+                        data-aos-duration="1500">
+                        <div class="image"></div>
+                        <div class="info text-center py-4">
+                            <h2>Nihad Alakbarzade</h2>
+                            <span>I'm <span class="auto-type"></span></span>
+                        </div>
+                        <div class="social-media">
+                            <ul class="list-unstyled d-flex">
+                                <a href="https://www.instagram.com/nikoalakbar/" target="_blank">
+                                    <li class="icon pr-4"><i class="fa-brands fa-instagram"></i></li>
+                                </a>
+                                <a href="https://www.facebook.com/nihad.alakbarzade.33/" target="_blank">
+                                    <li class="icon pr-4"><i class="fa-brands fa-facebook"></i></li>
+                                </a>
+                                <a href="https://github.com/nihadae/" target="_blank">
+                                    <li class="icon pr-4"><i class="fa-brands fa-github"></i></li>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nihadae/" target="_blank">
+                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="button">
+                            <a href="#contact"><button class="btn btn-danger">Contact me</button></a>
+                        </div>
+                    </div>
+                    <a href="#about">
+                        <div class="divScroll">
+                            <img src="https://thumbs.gfycat.com/ApprehensiveHorribleHorsemouse-max-1mb.gif" alt="">
+                    </a>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="about py-5" id="about">
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="title-about m-5">About me</h2>
+                    <div class="about-info d-flex col-lg-12 col-md-12 col-12 flex-wrap">
+                        <div class="image-part col-lg-3 col-md-3 col-sm-5 col-6" data-aos="fade-up">
+                            <img src="/assets/images/gamer.png" alt="">
+                        </div>
+                        <div class="info-part col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center flex-wrap"
+                            data-aos="fade-up">
+                            <div
+                                class="text-about col-lg-8 col-md-8 col-12 d-flex flex-column justify-content-center align-items-center mt-3">
+                                <span class="text-muted d-block">
+                                    I am Nihad Alakbarzade, a third-year Computer Science and Data Science student at
+                                    the University of British Columbia. My main objective is to dive deeper into the
+                                    field of Computer & Data Science.
+                                </span>
+                                <a href="/assets/resume.pdf" target="_blank"><button
+                                        class="btn btn-danger col-lg-12 col-md-12 col-sm-12 mt-4 col-12 mb-3">Download
+                                        CV</button></a>
+                            </div>
+                            <div class="progress-view col-lg-4 col-md-4 col-12">
+                                <h5>GPA:</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 99%"
+                                        aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="d-block py-2">3.97/4.00</span>
+                                <h5>Year:</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="d-block py-2">3/4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-education col-lg-12 col-md-12 col-12 d-flex flex-column align-items-center pt-4">
+
+                        <!-- Single Experience -->
+
+                        <div class="timeline_content col-lg-5 col-md-6 col-9 p-3 my-1 d-flex flex-column justify-content-center"
+                            data-aos="fade-left">
+                            <span><i class="fa-solid fa-graduation-cap"></i>2020-2024</span>
+                            <h4>University of British Columbia</h4>
+                            <p>Currently studying with a expected graduation year of 2024. Current cumulative GPA is
+                                3.97/4.00.</p>
+                        </div>
+
+                        <!-- Single Experience -->
+
+                        <div class="timeline_content hiddenItem col-lg-5 col-md-6 col-9 p-3 my-1 d-flex flex-column justify-content-center"
+                            data-aos="fade-right">
+                            <span><i class="fa-solid fa-graduation-cap"></i>2009-2020</span>
+                            <h4>Dunya School</h4>
+                            <p>Studied IB Diploma Programme and graduated with 36/45.</p>
+                        </div>
+
+                        <!-- Single Experience -->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio py-5" id="portfolio">
+            <div class="container">
+                <div class="row py-5">
+                    <h2 class="title-about m-5">Portfolio</h2>
+                    <div class="recent-works d-flex flex-wrap justify-content-around align-items-center">
+                        <div class="quiz-now box-item col-lg-5 col-md-6 col-10 d-flex flex-column align-items-center m-3"
+                            data-aos="flip-right">
+                            <span class="text-center">QuizNow</span>
+                            <div class="img-item mb-2">
+                                <img src="/assets/images/Screen Shot 2022-08-27 at 13.41.56.png" alt="">
+                            </div>
+                            <span class="text-muted mt-3 col-lg-10">Utilized Swift and Trivia API.
+                                Grouped the questions based on categories and difficulties.
+                                Users can see their scores and retry the quiz multiple times.
+                            </span>
+                            <a href="https://apps.apple.com/ca/app/quiznow/id1641710150" target="_blank"><button
+                                    class="btn btn-danger m-3">Download now</button></a>
+                        </div>
+
+                        <div class="weather-now box-item col-lg-5 col-md-6 col-10 d-flex flex-column align-items-center m-3"
+                            data-aos="flip-left">
+                            <span class="text-center">WeatherNow</span>
+                            <div class="img-item mb-2">
+                                <img src="/assets/images/Screen Shot 2022-08-27 at 13.42.13.png" alt="">
+                            </div>
+                            <span class="text-muted mt-3 col-lg-10">Utilized Swift and OpenWeather API.
+                                An IOS Application which shows the current weather temperature and certain features
+                                based on location.
+                            </span>
+                            <a href="https://apps.apple.com/ca/app/weathernow/id1640552891" target="_blank"><button
+                                    class="btn btn-danger m-3">Download now</button></a>
+                        </div>
+
+                        <div class="personal-now box-item col-lg-5 col-md-6 col-10 d-flex flex-column align-items-center m-3"
+                            data-aos="flip-down">
+                            <span class="text-center">Personal Website</span>
+                            <div class="img-item gamer mb-2">
+                                <img src="/assets/images/gamer.png" alt="">
+                            </div>
+                            <span class="text-muted mt-3 col-lg-10">Utilized HTML, SASS, and Bootstrap for the front
+                                end.
+                                Made the website dynamic with JavaScript (animations, scroll, etc.).
+                            </span>
+                            <a href="https://github.com/nihadae/personalWebsite" target="_blank"><button
+                                    class="btn btn-danger m-3">Go to link</button></a>
+                        </div>
+
+                        <div class="nhl-now box-item col-lg-5 col-md-6 col-10 d-flex flex-column align-items-center m-3"
+                            data-aos="flip-up">
+                            <span class="text-center">NHL Dataset Exploration</span>
+                            <div class="img-item nhl mb-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/1200px-05_NHL_Shield.svg.png"
+                                    alt="">
+                            </div>
+                            <span class="text-muted mt-3 col-lg-10">Cleaned, wrangled, and processed the chosen dataset
+                                with
+                                Python.
+                                Conducted Exploratory Data Analysis on the dataset.
+                            </span>
+                            <a href="https://github.com/ubco-W2021T1-data301/project-group38-project"
+                                target="_blank"><button class="btn btn-danger m-3">Go to link</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pglang py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="programming-languages d-flex flex-wrap">
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+                            <i class="devicon-html5-plain-wordmark"></i>
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-css3-plain-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-sass-original"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-javascript-plain"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-java-plain-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-csharp-line-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-rstudio-plain"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-python-plain-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-swift-plain-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-markdown-original"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-jupyter-plain-wordmark"></i>
+
+                        </div>
+                        <div class="lang-item col-lg-4 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center mb-3"
+                            data-aos="zoom-out">
+
+                            <i class="devicon-git-plain-wordmark"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact py-5" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-about col-lg-12">Get in touch</h2>
+                    <div class="contact-parts col-lg-12 d-flex flex-wrap">
+                        <div class="left-part col-lg-4 col-sm-12" data-aos="fade-down-right">
+                            <h4>Let's talk about everything!</h4>
+                        </div>
+                        <div class="right-part col-lg-8" data-aos="fade-up">
+                            <form target="_blank" action="https://formsubmit.co/alakbarzadenihad@gmail.com"
+                                method="POST">
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <input type="text" name="_honey" style="display: none;">
+                                        <input type="hidden" name="_captcha" value="false">
+
+                                        <div class="col-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Full Name"
+                                                required>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Email Address" required>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Your Message" class="form-control" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-danger btn-block col-lg-3">Submit
+                                    Form</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <span class="text-center text-muted d-block">
+                    © 2022 Nihad Alakbarzade.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <a href="#welcome">
+        <div class="backToUp border d-flex align-items-center justify-content-center">
+            <span><i class="fas fa-arrow-up"></i></span>
+    </a>
+    </div>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["a Student.", "a Developer.", "an Enthusiastic."],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        })    
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/assets/js/particles.js-master/dist/particles.min.js"></script>
+</body>
+
+</html>
