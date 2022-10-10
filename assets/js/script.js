@@ -6,11 +6,11 @@ window.onload = function() {
   });
   setTimeout(() => {
     document.querySelector("body").classList.add("display");
-  }, 4000);
+  }, 2000);
 };
 
 function openNav(){
-  document.getElementById("sideNav").style.width = "35%";
+  document.getElementById("sideNav").style.width = "45%";
   document.getElementById("sideNav").style.right = "0%";
   document.getElementById("sideNav").style.transition = "0.3s ease-in-out";
 }

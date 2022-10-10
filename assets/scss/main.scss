@@ -138,9 +138,9 @@ header {
 
 .image {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-image: url("/assets/images/gamer.png");
+    width: 200px;
+    height: 200px;
+    background-image: url("/assets/images/me.png");
     background-position: center;
     background-size: cover;
 }
@@ -184,6 +184,7 @@ header {
     border-radius: 50%;
     img{
         width: 100%;
+        border-radius: 50%;
     }
 }
 .info-part{
@@ -226,6 +227,7 @@ header {
 .gamer{
     width: 110px;
     height: 110px;
+    border-radius: 50%;
     img{
         width: 100%;
     }
@@ -332,7 +334,7 @@ footer{
     position: relative;
     opacity: 0;
     visibility: hidden;
-    animation: displayCircles 4s;
+    animation: displayCircles 2s;
   }
   
   @keyframes displayCircles {
